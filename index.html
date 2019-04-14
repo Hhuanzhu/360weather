@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>360天气</title>
+	<link rel="stylesheet" href="lib/index.css">
+</head>
+<body class='skin1'>
+	<div class="skinmore"></div>
+	<div class="header">
+		<a class='logo' href="http://so.360.cn"></a>
+		<form id="kwsearch" action="">
+			<input class='search-txt' type="text">
+			<button class='search-btn'>搜 索</button>
+		</form>
+	</div>
+	<div class="tab">
+		<ul>
+			<li class='current'><a href="">查看天气</a></li>
+			<li><a href="">360天气介绍</a></li>
+			<li><a href="">许可协议</a></li>
+			<li id='last-li'><a href="">收藏</a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<div class="city">
+			<select id="province">
+				<option value="01">请选择城市</option>
+				<option value="23">福建</option>
+				<option value="28">广东</option>
+				<option value="21">浙江</option>
+			</select>
+			<select id="city">
+	           <option value="" selected="selected">请选择城市</option>
+	        </select>
+	        <select id="area">
+	           <option value="" selected="selected">请选择城市</option>
+	        </select>
+	       <input type="button" value="更换" class="citybtn">
+		</div>
+		<div class="wether">
+            <div class="wetherintro">
+                <div id="cityinfo" style="display: block;">
+                <h4 class="wethercity"></h4>
+                <p class="wethertime"></p>
+                <!--　各状态为yanzhong zhongdu zhong qing liang youxiu -->
+                <span class="wethericon youxiu" id="aqi">了解最新天气情况</span>
+                </div>
+                <div class="wetherdetail">
+                    <strong id="temperature"></strong><span id="weathertype">暂无数据</span>
+                    <ul style="display: block;width:260px;">
+                        <li><i class="icon-shi"></i> <span id="humidity"></span></li>
+                        <li class="txt-r"><i class="icon-feng"></i><span id="winddir"></span> <span id="windpower"></span></li>
+                    </ul>
+                </div>                
+            </div>
+            <div class="wetherapp"> 
+                <img src="http://p1.qhimg.com/t012106e01f86dfafca.png">
+                <p class="wetherapptxt">360天气，知冷暖，更懂你</p>
+                <a class="btn-app" href="http://down.360safe.com/mzm/360clockweather.apk"></a>
+            </div>
+        </div>
+		<div class="morewether">
+        <!--　各天气对应中文拼音　如icon-yewanqing对应“夜晚晴“ -->
+            <ul id="foreast">
+	            <li>
+	            	<p class="colora"></p>
+	            	<p class="icon-tu">
+	            		<i class="icon-xiaoyu"></i>
+	            		<br>
+	            	</p>
+	            	<p class="otherinfo">
+	            		<span></span>
+	            	</p>
+	            </li>
+	            <li>
+	            	<p class="colora"></p>
+	            	<p class="icon-tu"><i class="icon-xiaoyu"></i><br></p>
+	            	<p class="otherinfo"><span></span></p>
+	            </li>
+	            <li>
+	            	<p class="colora"></p>
+	            	<p class="icon-tu"><i class="icon-xiaoyu"></i><br></p>
+	            	<p class="otherinfo"><span></span></p>
+	            </li>
+	            <li>
+	            	<p class="colora"></p><p class="icon-tu"><i class="icon-yintian"></i><br></p><p class="otherinfo"><span></span></p>
+	            </li>
+	            <li>
+	            	<p class="colora"></p>
+	            	<p class="icon-tu"><i class="icon-xiaoyu"></i><br></p>
+	            	<p class="otherinfo"><span></span></p>
+	            </li>
+	        </ul>
+        </div>
+		<div id="copyright">
+	        <p>Copyright©2005-2017 360.com 版权所有 360互联网安全中心</p>
+	        <p>
+	        	<a style="color:#999;" href="http://www.miitbeian.gov.cn/">京ICP证080047号[京ICP备08010314号-6]</a>
+	        	<a style="color:#999;" href="http://www.360.cn/licence1.html"> 文网文[2009]024号</a>
+	        	<a style="color:#999;" href="http://www.360.cn/licence2.html"> 新出网证（京）字069号</a>
+	        	 <a style="color:#999;" href="http://www.360.cn/gongshangyingyezhizhao.html">工商营业执照</a>
+	        </p>
+	        <p></p>
+	        <p>
+        		<a style="color:#999;" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000006">
+        			<img src="http://www.beian.gov.cn/file/ghs.png" >京公网安备 11000002000006号
+        		</a>
+        	</p>
+	    </div>
+	</div>
+
+	<script src='lib/jsonp.js'></script>
+	<script src='lib/index.js'></script>
+	
+</body>
+</html>
